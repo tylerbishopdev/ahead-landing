@@ -1,0 +1,77 @@
+---
+import "../styles/global.css";
+---
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1" /><title>
+		Ezoic Ahead | Website Resources From The Future
+	</title><meta
+		name="description"
+		content="Access the latest techniques, tools, and data on AI and more. Take advantage of free tools and explore the future of the web."
+	/><meta
+		name="robots"
+		content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+	/><link rel="canonical" href="https://ahead.ezoic.com/" /><meta
+		property="og:locale"
+		content="en_US"
+	/><meta property="og:type" content="website" /><meta
+		property="og:title"
+		content="Ezoic Ahead | Website Resources From The Future"
+	/><meta
+		property="og:description"
+		content="Access the latest techniques, tools, and data on AI and more. Take advantage of free tools and explore the future of the web."
+	/><meta property="og:url" content="https://ahead.ezoic.com/" /><meta
+		property="og:site_name"
+		content="Ezoic Ahead"
+	/><meta
+		property="og:updated_time"
+		content="2023-06-30T16:04:11-07:00"
+	/><meta property="og:image" content="/images/aheadbanner.png" /><meta
+		property="og:image:secure_url"
+		content="/images/aheadbanner.png"
+	/><meta property="og:image:width" content="1200" /><meta
+		property="og:image:height"
+		content="630"
+	/><meta property="og:image:alt" content="Ezoic Logo" /><meta
+		property="og:image:type"
+		content="image/png"
+	/><meta name="twitter:card" content="summary_large_image" /><meta
+		name="twitter:title"
+		content="Ezoic Ahead | Website Resources From The Future"
+	/><meta
+		name="twitter:description"
+		content="Access the latest techniques, tools, and data on AI and more. Take advantage of free tools and explore the future of the web."
+	/><meta name="twitter:image" content="/images/aheadbanner.png" />
+</head>
+<body class="w-full h-full bg-black">
+<div
+style="perspective: 300px;"  class="w-full h-full bg-black"
+>
+	{
+		Array.from({ length: 70 }).map((_, i) => (
+			<div
+				class="absolute w-1 h-1 bg-white/30 rounded-full animate-star-animation"
+				style={`top: ${Math.random() * 100}%; left: ${
+					Math.random() * 100
+				}%; animation-delay: ${
+					Math.random() * 0
+				}s; animation-duration: ${(1 + Math.random() * 2) / 1}s;`}
+			/>
+		))
+	}
+	{
+		Array.from({ length: 70 }).map((_, i) => (
+			<div
+				class="absolute w-2 h-2 bg-ezgreen1/20 rounded-full animate-star-animation"
+				style={`top: ${Math.random() * 100}%; left: ${
+					Math.random() * 100
+				}%; animation-delay: ${
+					Math.random() * 0
+				}s; animation-duration: ${(1 + Math.random() * 2) / 1}s;`}
+			/>
+		))
+	}
+
+	<slot />
+</div>
+</body>

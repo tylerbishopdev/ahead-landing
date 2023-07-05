@@ -1,10 +1,23 @@
 import { defineConfig } from 'astro/config';
 import netlify from '@astrojs/netlify/edge-functions';
 import react from "@astrojs/react";
+import tailwind from "@astrojs/tailwind";
+import image from "@astrojs/image";
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [react()],
-  adapter: netlify(),
-  output: 'server'
+  integrations:
+  [netlify(), 
+    react(),
+    tailwind(),
+    image()
+  ],
+    adapter: netlify(),
+    output: 'server',
+    buildOptions: {
+      emptyOutDir: true
+    },
+  
 });
+
+
+ 
